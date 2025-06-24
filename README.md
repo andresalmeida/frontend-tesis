@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+# Plataforma de Indicadores Ambientales del Ecuador
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una plataforma web interactiva para la visualización y difusión de indicadores ambientales clave del Ecuador, como la **Huella Humana** y los **Bosques Riparios**. Está diseñada con un enfoque moderno, ecológico y profesional, utilizando React, Material-UI y animaciones avanzadas.
 
-## Available Scripts
+## 🌱 Características principales
 
-In the project directory, you can run:
+- **Diseño moderno y ecológico**: Paleta de verdes (#1D2331, #CFFF4F, #2B443C), fuente Montserrat y títulos con Oswald.
+- **Componentes reutilizables**: Incluye `ConceptCard` y bloques "¿Sabías que...??" con efecto glassmorphism.
+- **Sistema de slides animados**: Navegación fluida por flechas usando Framer Motion.
+- **Dashboards embebidos**: Visualización de datos en tiempo real mediante iframes.
+- **Responsive y accesible**: Adaptado a dispositivos móviles y escritorio.
 
-### `npm start`
+## 🚀 Tecnologías utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Material-UI (MUI)](https://mui.com/)
+- [Framer Motion](https://www.framer.com/motion/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📁 Estructura del proyecto
 
-### `npm test`
+```
+frontend-tesis/
+├── public/                # Archivos estáticos y HTML principal
+├── src/
+│   ├── assets/            # Imágenes y recursos gráficos
+│   ├── components/        # Componentes reutilizables (Navbar, ConceptCard, etc.)
+│   ├── pages/             # Páginas principales (Home, HuellaHumana, BosquesRiparios)
+│   ├── theme.ts           # Configuración de tema y paleta de colores
+│   ├── index.css          # Estilos globales
+│   └── App.tsx            # Componente raíz
+├── package.json           # Dependencias y scripts
+└── README.md              # Este archivo
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🖥️ ¿Cómo ejecutar el proyecto?
 
-### `npm run build`
+1. **Clona el repositorio:**
+   ```sh
+   git clone https://github.com/andresalmeida/frontend-tesis.git
+   cd frontend-tesis
+   ```
+2. **Instala las dependencias:**
+   ```sh
+   npm install
+   ```
+3. **Inicia la aplicación:**
+   ```sh
+   npm start
+   ```
+   La app estará disponible en [http://localhost:3000](http://localhost:3000)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **(Opcional) Configura el backend de dashboards**
+   - El iframe de dashboards apunta por defecto a `http://localhost:8000/`. Asegúrate de tener el backend corriendo en ese puerto si quieres ver los datos embebidos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📊 Indicadores incluidos
+- **Huella Humana:** Índice espacial de presión humana sobre ecosistemas.
+- **Bosques Riparios:** Estado y conservación de bosques a lo largo de ríos y cuerpos de agua.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 👨‍💻 Autor y créditos
+- Desarrollado por **Andrés Almeida Jara**
+- Inspirado y apoyado por el MAATE, PNUD, NASA y la comunidad científica ecuatoriana.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+> Proyecto académico y de divulgación. ¡Contribuciones y sugerencias son bienvenidas!
